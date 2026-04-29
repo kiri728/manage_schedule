@@ -5,12 +5,25 @@
         <title>Sライン</title>
         <link rel="stylesheet" href="style.css">
     </head>
+    <body>
+        <h1>Sライン比較表</h1>
+
+        <imput type="text" id="search" placeholder="名前検索">
+    
+        <button onclick="sortSpeed()">S順に並び替え</button>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>名前</th>
+                    <th>素早さ</th>
+                    <th>タイプ</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+
+        <script src="script.js"></script>
+    </body>
 </html>
-
-<body>
-    <h1>Sライン比較表</h1>
-
-    <imput type="text" id="search" placeholder="名前検索">
-    
-    
-</body>
