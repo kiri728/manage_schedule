@@ -1,0 +1,95 @@
+#schedule{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#schedule th, #test-table td{
+    border: 1px solid #000;
+    padding: 8px;
+    test-align: center;
+}
+
+#input_button{
+    /* フォント設定 */
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+    /* ボタンサイズ設定 */
+    width: 75px;
+    height: 50px;
+
+    /* 色、見た目 */
+    color: blue;
+    background-color: white;
+
+    /* UE関連 */
+    cursor: pointer;
+    border-radius: 8px;
+
+    /* UI,見た目 */
+    clear: both;
+}
+
+#close-button{
+    position: absolute;
+
+    top: 0px;
+    right: 0px;
+
+    border: none;
+
+    font-size: 24px;
+    border-radius: 0 10px 0 0;
+}
+
+#close-button:hover{
+    background: red;
+}
+
+#overlay{
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.5);
+}
+
+#input-area{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+#input-area input{
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#add-button{
+    bottom: 100px;
+}
+
+#form-popup{
+    display: none;
+    position: fixed;
+
+    width: 75%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+}
