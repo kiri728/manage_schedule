@@ -20,7 +20,8 @@
                     <thead>
                         <tr>
                             <th>日付</th>
-                            <th>時間</th>
+                            <th>開始時間</th>
+                            <th>終了時間</th>
                             <th>内容</th>
                             <th>色</th>
                         </tr>
@@ -40,9 +41,15 @@
             <h2>予定追加</h2>
 
             <div id="input-area">
-                <input type="date" id="date">
-                <input type="time" id="time">
+                <label for="title">タイトル</label>
                 <input type="text" id="title">
+                <label for="date">日程</label>
+                <input type="date" id="date">
+                <label for="begin">開始時間</label>
+                <input type="time" id="time1">
+                <label for="end">終了時間</label>
+                <input type="time" id="time2">
+                <label for="color">ラベル</label>
                 <input type="color" id="color">
             </div>
 
