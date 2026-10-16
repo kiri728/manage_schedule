@@ -8,21 +8,21 @@
     <body>
         <h1>スケジュール</h1>
 
-        <imput type="text" id="search" placeholder="名前検索"></imput>
+        <input type="text" id="search" placeholder="名前検索"></input>
         
         <div id="main-page">
             <div class="button-area" style="display:block;">
-                <button id="input_button" onclick="openform();">+</botton>
+                <button id="input_button" onclick="openForm();">+</button>
             </div>
 
             <div class="table-area" style="display:block;">
                 <table id="schedule">
                     <thead>
                         <tr>
-                            <th>日付</th>
-                            <th>開始時間</th>
+                            <th>課題</th>
+                            <th>締切日</th>
                             <th>終了時間</th>
-                            <th>内容</th>
+                            <!--<th>メモ</th>--><!--今後実装-->
                             <th>色</th>
                         </tr>
                     </thead>
@@ -32,11 +32,11 @@
             </div>
         </div>
 
-        <div id="overlay" onclick="closeform()"></div>
+        <div id="overlay" onclick="closeForm()"></div>
 
         <div id="form-popup" style="display:none;">
 
-            <button id="close-button" onclick="closeform()">×</button>
+            <button id="close-button" onclick="closeForm()">×</button>
 
             <h2>予定追加</h2>
 
@@ -45,8 +45,6 @@
                 <input type="text" id="title">
                 <label for="date">日程</label>
                 <input type="date" id="date">
-                <label for="begin">開始時間</label>
-                <input type="time" id="begin">
                 <label for="end">終了時間</label>
                 <input type="time" id="end">
                 <label for="color">ラベル</label>
@@ -55,7 +53,7 @@
 
             <br><br>
 
-            <button id="add-button" onclick="addschedule();closeform();">追加</button>
+            <button id="add-button" onclick="addschedule();closeForm();">追加</button>
 
         </div>
         <script src="script.js"></script>
